@@ -14,7 +14,8 @@
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7166;http://localhost:5176",
+      //"launchUrl": "mapInfo/getdistance?originCity=Dallas,Tx&destinationCity=Los%20Angeles,CA",
+      "applicationUrl": "https://localhost:5001;http://localhost:5176",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
