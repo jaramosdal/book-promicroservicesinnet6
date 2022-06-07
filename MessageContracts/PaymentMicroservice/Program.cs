@@ -7,7 +7,8 @@ var busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
     cfg.Host("localhost");
     cfg.ReceiveEndpoint("payment-service", e =>
     {
-        e.Consumer<InvoiceCreatedConsumer>(c => c.UseMessageRetry(m => m.Interval(5, new TimeSpan(0, 0, 10))));
+        e.Consumer<InvoiceCreatedConsumer>(c => 
+            c.UseMessageRetry(m => m.Interval(5, new TimeSpan(0, 0, 10))));
     });
 });
 

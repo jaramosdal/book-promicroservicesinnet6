@@ -36,6 +36,7 @@ finally
 {
     await busControl.StopAsync();
 }
+
 static async Task SendRequestForInvoiceCreation(IPublishEndpoint publishEndpoint)
 {
     var rnd = new Random(); await publishEndpoint.Publish<IInvoiceToCreate>(new
