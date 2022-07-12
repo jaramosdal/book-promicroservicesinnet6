@@ -18,6 +18,8 @@ public class EventConsumer : IConsumer<IInvoiceToCreate>
             Console.WriteLine($"Oversized: {i.IsOversized}, Refrigerated: {i.IsRefrigerated}, Haz Mat: {i.IsHazardousMaterial}");
         });
 
+        // Aquí crearíamos la factura en la base de datos, generaríamos los logs, etc...
+
         await context.Publish<IInvoiceCreated>(new
         {
             InvoiceNumber = newInvoiceNumber,
