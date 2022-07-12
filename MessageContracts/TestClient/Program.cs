@@ -39,7 +39,8 @@ finally
 
 static async Task SendRequestForInvoiceCreation(IPublishEndpoint publishEndpoint)
 {
-    var rnd = new Random(); await publishEndpoint.Publish<IInvoiceToCreate>(new
+    var rnd = new Random(); 
+    await publishEndpoint.Publish<IInvoiceToCreate>(new
     {
         CustomerNumber = rnd.Next(1000, 9999),
         InvoiceItems = new List<InvoiceItems>()
