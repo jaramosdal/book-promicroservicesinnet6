@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderSvc-Consumer", "OrderS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderSvc-Test", "OrderSvc-Test\OrderSvc-Test.csproj", "{026023B7-8E4E-4F53-B01D-B1143239C13F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountSvc-Test", "DiscountSvc-Test\DiscountSvc-Test.csproj", "{1F7616BC-0878-4D34-B922-4AAC5C8DB724}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{026023B7-8E4E-4F53-B01D-B1143239C13F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{026023B7-8E4E-4F53-B01D-B1143239C13F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{026023B7-8E4E-4F53-B01D-B1143239C13F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F7616BC-0878-4D34-B922-4AAC5C8DB724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F7616BC-0878-4D34-B922-4AAC5C8DB724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F7616BC-0878-4D34-B922-4AAC5C8DB724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F7616BC-0878-4D34-B922-4AAC5C8DB724}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

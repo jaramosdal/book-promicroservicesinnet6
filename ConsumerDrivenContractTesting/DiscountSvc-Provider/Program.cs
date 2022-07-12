@@ -30,7 +30,7 @@ app.UseRouting();
 
 app.UseEndpoints(endpoints => 
 {
-    var svc = endpoints.ServiceProvider.GetRequiredServices<DiscountService>();
+    var svc = endpoints.ServiceProvider.GetRequiredService<DiscountService>();
 
     endpoints.MapPost("/discount", async context => 
     {
